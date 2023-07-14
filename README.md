@@ -16,8 +16,6 @@ INCLUDE gh+AppJail-makejails/apache
 
 COPY index.html /usr/local/www/apache24/data/index.html
 CMD chown www:www /usr/local/www/apache24/data/index.html
-
-SERVICE apache24 reload
 ```
 
 Where `options/network.makejail` are the options that suit your environment, for example:
@@ -44,8 +42,6 @@ INCLUDE gh+AppJail-makejails/apache
 
 COPY app.php /usr/local/www/apache24/data/app.php
 CMD chown www:www /usr/local/www/apache24/data/app.php
-
-SERVICE apache24 reload
 ```
 
 Open a shell and run `appjail makejail`:
