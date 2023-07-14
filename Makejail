@@ -2,4 +2,4 @@ INCLUDE options/options.makejail
 
 ARG apache_tag=13.2
 
-FROM --entrypoint gh+AppJail-makejails/apache apache:${nginx_tag}
+FROM --entrypoint gh+AppJail-makejails/apache apache:${apache_tag}
