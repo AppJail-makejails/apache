@@ -1,0 +1,17 @@
+INCLUDE options/options.makejail
+
+ARG apache_with_php=0
+ARG apache_php_version=83
+
+PKG apache24
+
+RAW if [ "${apache_with_php}" != 0 ]; then
+	RAW if ! echo "${apache_php_version}" | grep -qEe '^8[0-3]$'; then
+	RAW 	echo "VALID VERSIONS: 80, 81, 82, 83"
+	RAW 	exit 1
+	RAW fi
+
+	PKG mod_php${apache_php_version}
+
+	COPY usr
+RAW fi
