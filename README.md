@@ -63,7 +63,6 @@ INCLUDE options/network.makejail
 INCLUDE gh+AppJail-makejails/apache --file build.makejail
 
 SYSRC apache24_enable=YES
-SERVICE apache24 start
 ```
 
 Build the jail:
