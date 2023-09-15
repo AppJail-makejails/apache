@@ -90,8 +90,8 @@ appjail image export apache
 
 | Tag          | Arch    | Version           | Type   |
 | ------------ | ------- | ----------------- | ------ |
-| `13.2`       | `amd64` | `13.2-RELEASE-p2` | `thin` |
-| `13.2-php83` | `amd64` | `13.2-RELEASE-p2` | `thin` |
-| `13.2-php82` | `amd64` | `13.2-RELEASE-p2` | `thin` |
-| `13.2-php81` | `amd64` | `13.2-RELEASE-p2` | `thin` |
-| `13.2-php80` | `amd64` | `13.2-RELEASE-p2` | `thin` |
+| `13.2`       | `amd64` | `13.2-RELEASE-p3` | `thin` |
+| `13.2-php83` | `amd64` | `13.2-RELEASE-p3` | `thin` |
+| `13.2-php82` | `amd64` | `13.2-RELEASE-p3` | `thin` |
+| `13.2-php81` | `amd64` | `13.2-RELEASE-p3` | `thin` |
+| `13.2-php80` | `amd64` | `13.2-RELEASE-p3` | `thin` |
