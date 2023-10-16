@@ -53,6 +53,7 @@ appjail makejail -j apache -- --apache_tag 13.2-php82
 ### Arguments
 
 * `apache_tag` (default: `13.2`): see [#tags](#tags).
+* `apache_php_type` (default: `production`): The PHP configuration file to link to `/usr/local/etc/php.ini`. Valid values: `development`, `production`.
 
 ## How to build the Image
 

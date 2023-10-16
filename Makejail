@@ -1,5 +1,13 @@
 INCLUDE options/options.makejail
 
+ARG apache_php_type=production
 ARG apache_tag=13.2
 
 FROM --entrypoint gh+AppJail-makejails/apache apache:${apache_tag}
+
+RAW case "${apache_php_type}" in
+RAW 	development|production) ;;
+RAW 	*) echo "VALID TYPES: development, production"; exit 1
+RAW esac
+
+CMD ln -s /usr/local/etc/php.ini-${apache_php_type} /usr/local/etc/php.ini
