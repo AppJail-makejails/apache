@@ -88,10 +88,10 @@ appjail image export apache
 
 ## Tags
 
-| Tag          | Arch    | Version           | Type   | `apache_with_php` | `apache_php_version` |
-| ------------ | ------- | ----------------- | ------ | ----------------- | -------------------- |
-| `13.2`       | `amd64` | `13.2-RELEASE-p4` | `thin` |        `0`        |          -           |
-| `13.2-php83` | `amd64` | `13.2-RELEASE-p4` | `thin` |        `1`        |         `83`         |
-| `13.2-php82` | `amd64` | `13.2-RELEASE-p4` | `thin` |        `1`        |         `82`         |
-| `13.2-php81` | `amd64` | `13.2-RELEASE-p4` | `thin` |        `1`        |         `81`         |
-| `13.2-php80` | `amd64` | `13.2-RELEASE-p4` | `thin` |        `1`        |         `80`         |
+| Tag          | Arch    | Version        | Type   | `apache_with_php` | `apache_php_version` |
+| ------------ | ------- | -------------- | ------ | ----------------- | -------------------- |
+| `13.2`       | `amd64` | `13.2-RELEASE` | `thin` |        `0`        |          -           |
+| `13.2-php83` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `83`         |
+| `13.2-php82` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `82`         |
+| `13.2-php81` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `81`         |
+| `13.2-php80` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `80`         |
