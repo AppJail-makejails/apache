@@ -61,8 +61,6 @@ Make any changes you want to your image.
 ```
 INCLUDE options/network.makejail
 INCLUDE gh+AppJail-makejails/apache --file build.makejail
-
-SYSRC apache24_enable=YES
 ```
 
 Build the jail:
