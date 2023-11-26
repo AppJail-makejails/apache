@@ -54,36 +54,6 @@ appjail makejail -j apache -- --apache_tag 13.2-php82
 
 * `apache_tag` (default: `13.2`): see [#tags](#tags).
 
-## How to build the Image
-
-Make any changes you want to your image.
-
-```
-INCLUDE options/network.makejail
-INCLUDE gh+AppJail-makejails/apache --file build.makejail
-```
-
-Build the jail:
-
-```sh
-appjail makejail -j apache
-# With php support:
-appjail makejail -j apache -- \
-    --apache_with_php 1 \
-    --apache_php_version 82
-```
-
-Remove unportable or unnecessary files and directories and export the jail:
-
-```sh
-appjail stop apache
-appjail cmd local apache sh -c "rm -f var/log/*"
-appjail cmd local apache sh -c "rm -f var/cache/pkg/*"
-appjail cmd local apache sh -c "rm -f var/run/*"
-appjail cmd local apache vi etc/rc.conf
-appjail image export apache
-```
-
 ## Tags
 
 | Tag          | Arch    | Version        | Type   | `apache_with_php` | `apache_php_version` |
