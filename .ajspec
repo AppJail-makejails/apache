@@ -78,3 +78,5 @@ tags+: 14.0-php80
 14.0-php80.size.amd64: 66047108
 14.0-php80.source.amd64: "http://appjail.hpc.at/apache/14.0-php80-amd64-image.appjail"
 14.0-php80.source.amd64+: "https://images.all101bsd.download/apache/14.0-php80-amd64-image.appjail"
+entrypoint: "gh+AppJail-makejails/apache"
+ajspec: ".ajspec"
