@@ -62,9 +62,7 @@ appjail makejail -j apache -- --apache_tag 13.2-php82
 | `13.2-php83` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `83`         |
 | `13.2-php82` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `82`         |
 | `13.2-php81` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `81`         |
-| `13.2-php80` | `amd64` | `13.2-RELEASE` | `thin` |        `1`        |         `80`         |
 | `14.0`       | `amd64` | `14.0-RELEASE` | `thin` |        `0`        |          -           |
 | `14.0-php83` | `amd64` | `14.0-RELEASE` | `thin` |        `1`        |         `83`         |
 | `14.0-php82` | `amd64` | `14.0-RELEASE` | `thin` |        `1`        |         `82`         |
 | `14.0-php81` | `amd64` | `14.0-RELEASE` | `thin` |        `1`        |         `81`         |
-| `14.0-php80` | `amd64` | `14.0-RELEASE` | `thin` |        `1`        |         `80`         |
