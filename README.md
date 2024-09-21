@@ -47,21 +47,21 @@ CMD chown www:www /usr/local/www/apache24/data/app.php
 Open a shell and run `appjail makejail`:
 
 ```sh
-appjail makejail -j apache -- --apache_tag 13.3-php82
+appjail makejail -j apache -- --apache_tag 13.4-php82
 ```
 
 ### Arguments
 
-* `apache_tag` (default: `13.3`): see [#tags](#tags).
+* `apache_tag` (default: `13.4`): see [#tags](#tags).
 
 ## Tags
 
 | Tag          | Arch    | Version        | Type   | `apache_with_php` | `apache_php_version` |
 | ------------ | ------- | -------------- | ------ | ----------------- | -------------------- |
-| `13.3`       | `amd64` | `13.3-RELEASE` | `thin` |        `0`        |          -           |
-| `13.3-php83` | `amd64` | `13.3-RELEASE` | `thin` |        `1`        |         `83`         |
-| `13.3-php82` | `amd64` | `13.3-RELEASE` | `thin` |        `1`        |         `82`         |
-| `13.3-php81` | `amd64` | `13.3-RELEASE` | `thin` |        `1`        |         `81`         |
+| `13.4`       | `amd64` | `13.4-RELEASE` | `thin` |        `0`        |          -           |
+| `13.4-php83` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        |         `83`         |
+| `13.4-php82` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        |         `82`         |
+| `13.4-php81` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        |         `81`         |
 | `14.1`       | `amd64` | `14.1-RELEASE` | `thin` |        `0`        |          -           |
 | `14.1-php83` | `amd64` | `14.1-RELEASE` | `thin` |        `1`        |         `83`         |
 | `14.1-php82` | `amd64` | `14.1-RELEASE` | `thin` |        `1`        |         `82`         |
