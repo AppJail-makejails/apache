@@ -18,3 +18,9 @@ cat -- "${BASEDIR}/README.md.template" |\
         -e "s/%%PHP1%%/${PHP1}/g" \
         -e "s/%%PHP2%%/${PHP2}/g" \
         -e "s/%%PHP3%%/${PHP3}/g" > "${BASEDIR}/../README.md"
+
+cat -- "${BASEDIR}/build.makejail.template" |\
+    sed -E \
+        -e "s/%%PHP1%%/${PHP1}/g" \
+        -e "s/%%PHP2%%/${PHP2}/g" \
+        -e "s/%%PHP3%%/${PHP3}/g" > "${BASEDIR}/../build.makejail"

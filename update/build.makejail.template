@@ -1,14 +1,14 @@
 INCLUDE options/options.makejail
 
 ARG apache_with_php=0
-ARG apache_php_version=83
+ARG apache_php_version=%%PHP3%%
 
 PKG apache24
 
 RAW if [ "${apache_with_php}" != 0 ]; then
     RAW case "${apache_php_version}" in
-    RAW     81|82|83) ;;
-    RAW     *) echo "VALID VERSIONS: 81, 82, 83"; exit 1 ;;
+    RAW     %%PHP1%%|%%PHP2%%|%%PHP3%%) ;;
+    RAW     *) echo "VALID VERSIONS: %%PHP1%%, %%PHP2%%, %%PHP3%%"; exit 1 ;;
     RAW esac
 
     PKG mod_php${apache_php_version}
