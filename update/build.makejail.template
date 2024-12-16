@@ -15,5 +15,3 @@ RAW if [ "${apache_with_php}" != 0 ]; then
 
     COPY usr
 RAW fi
-
-SYSRC apache24_enable=YES

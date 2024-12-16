@@ -4,3 +4,6 @@ ARG apache_tag=%%TAG1%%
 ARG apache_ajspec=gh+AppJail-makejails/apache
 
 FROM --entrypoint "${apache_ajspec}" apache:${apache_tag}
+
+SYSRC apache24_enable=YES
+SERVICE apache24 start
