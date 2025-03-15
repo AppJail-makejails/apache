@@ -47,22 +47,22 @@ CMD chown www:www /usr/local/www/apache24/data/app.php
 Open a shell and run `appjail makejail`:
 
 ```sh
-appjail makejail -j apache -- --apache_tag 13.4-php82
+appjail makejail -j apache -- --apache_tag 13.5-php82
 ```
 
 ### Arguments
 
-* `apache_tag` (default: `13.4`): see [#tags](#tags).
+* `apache_tag` (default: `13.5`): see [#tags](#tags).
 * `apache_ajspec` (default: `gh+AppJail-makejails/apache`): Entry point where the `appjail-ajspec(5)` file is located.
 
 ## Tags
 
 | Tag                    | Arch    | Version            | Type   | `apache_with_php` | `apache_php_version` |
 | ---------------------- | ------- | ------------------ | ------ | ----------------- | -------------------- |
-| `13.4`             | `amd64` | `13.4-RELEASE` | `thin` |        `0`        | -                    |
-| `13.4-php83` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        | `83`           |
-| `13.4-php82` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        | `82`           |
-| `13.4-php81` | `amd64` | `13.4-RELEASE` | `thin` |        `1`        | `81`           |
+| `13.5`             | `amd64` | `13.5-RELEASE` | `thin` |        `0`        | -                    |
+| `13.5-php83` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `83`           |
+| `13.5-php82` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `82`           |
+| `13.5-php81` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `81`           |
 | `14.2`             | `amd64` | `14.2-RELEASE` | `thin` |        `0`        | -                    |
 | `14.2-php83` | `amd64` | `14.2-RELEASE` | `thin` |        `1`        | `83`           |
 | `14.2-php82` | `amd64` | `14.2-RELEASE` | `thin` |        `1`        | `82`           |
