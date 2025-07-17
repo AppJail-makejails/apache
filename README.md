@@ -47,7 +47,7 @@ CMD chown www:www /usr/local/www/apache24/data/app.php
 Open a shell and run `appjail makejail`:
 
 ```sh
-appjail makejail -j apache -- --apache_tag 13.5-php82
+appjail makejail -j apache -- --apache_tag 13.5-php83
 ```
 
 ### Arguments
@@ -60,10 +60,10 @@ appjail makejail -j apache -- --apache_tag 13.5-php82
 | Tag                    | Arch    | Version            | Type   | `apache_with_php` | `apache_php_version` |
 | ---------------------- | ------- | ------------------ | ------ | ----------------- | -------------------- |
 | `13.5`             | `amd64` | `13.5-RELEASE` | `thin` |        `0`        | -                    |
+| `13.5-php84` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `84`           |
 | `13.5-php83` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `83`           |
 | `13.5-php82` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `82`           |
-| `13.5-php81` | `amd64` | `13.5-RELEASE` | `thin` |        `1`        | `81`           |
 | `14.3`             | `amd64` | `14.3-RELEASE` | `thin` |        `0`        | -                    |
+| `14.3-php84` | `amd64` | `14.3-RELEASE` | `thin` |        `1`        | `84`           |
 | `14.3-php83` | `amd64` | `14.3-RELEASE` | `thin` |        `1`        | `83`           |
 | `14.3-php82` | `amd64` | `14.3-RELEASE` | `thin` |        `1`        | `82`           |
-| `14.3-php81` | `amd64` | `14.3-RELEASE` | `thin` |        `1`        | `81`           |
