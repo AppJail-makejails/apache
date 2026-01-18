@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG apache_tag=13.5
+ARG apache_tag=14.3
 ARG apache_ajspec=gh+AppJail-makejails/apache
 
 FROM --entrypoint "${apache_ajspec}" apache:${apache_tag}

@@ -63,7 +63,7 @@ appjail makejail -j apache -- --apache_tag %%TAG1%%-php%%PHP2%%
 | `%%TAG1%%-php%%PHP3%%` | `amd64` | `%%TAG1%%-RELEASE` | `thin` |        `1`        | `%%PHP3%%`           |
 | `%%TAG1%%-php%%PHP2%%` | `amd64` | `%%TAG1%%-RELEASE` | `thin` |        `1`        | `%%PHP2%%`           |
 | `%%TAG1%%-php%%PHP1%%` | `amd64` | `%%TAG1%%-RELEASE` | `thin` |        `1`        | `%%PHP1%%`           |
-| `%%TAG2%%`             | `amd64` | `%%TAG2%%-RELEASE` | `thin` |        `0`        | -                    |
-| `%%TAG2%%-php%%PHP3%%` | `amd64` | `%%TAG2%%-RELEASE` | `thin` |        `1`        | `%%PHP3%%`           |
-| `%%TAG2%%-php%%PHP2%%` | `amd64` | `%%TAG2%%-RELEASE` | `thin` |        `1`        | `%%PHP2%%`           |
-| `%%TAG2%%-php%%PHP1%%` | `amd64` | `%%TAG2%%-RELEASE` | `thin` |        `1`        | `%%PHP1%%`           |
+| `%%TAG2%%`             | `amd64` | `%%TAG2%%` | `thin` |        `0`        | -                    |
+| `%%TAG2%%-php%%PHP3%%` | `amd64` | `%%TAG2%%` | `thin` |        `1`        | `%%PHP3%%`           |
+| `%%TAG2%%-php%%PHP2%%` | `amd64` | `%%TAG2%%` | `thin` |        `1`        | `%%PHP2%%`           |
+| `%%TAG2%%-php%%PHP1%%` | `amd64` | `%%TAG2%%` | `thin` |        `1`        | `%%PHP1%%`           |
