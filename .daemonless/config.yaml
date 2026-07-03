@@ -1,0 +1,33 @@
+build:
+  variants:
+    - tag: 15.1-24
+      containerfile: Containerfile
+      aliases: ["latest"]
+      default: true
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+    - tag: 15.1-24-php82
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+        PHPVER: "82"
+    - tag: 15.1-24-php83
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+        PHPVER: "83"
+    - tag: 15.1-24-php84
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+        PHPVER: "84"
+    - tag: 15.1-24-php85
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+        PHPVER: "85"
