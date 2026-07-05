@@ -118,30 +118,40 @@ build:
       args:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache:/var/cache/pkg"]
     - tag: 15.1-24-php82
       containerfile: Containerfile
       args:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
         PHPVER: "82"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache:/var/cache/pkg"]
     - tag: 15.1-24-php83
       containerfile: Containerfile
       args:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
         PHPVER: "83"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache:/var/cache/pkg"]
     - tag: 15.1-24-php84
       containerfile: Containerfile
       args:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
         PHPVER: "84"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache:/var/cache/pkg"]
     - tag: 15.1-24-php85
       containerfile: Containerfile
       args:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
         PHPVER: "85"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache:/var/cache/pkg"]
 ```
 
 ## Notes

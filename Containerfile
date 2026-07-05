@@ -4,6 +4,7 @@ FROM ghcr.io/appjail-makejails/core:${FREEBSD_RELEASE}
 
 ARG APACHEVER
 ARG PHPVER
+ARG NO_PKGCLEAN
 
 LABEL org.opencontainers.image.title="httpd" \
     org.opencontainers.image.description="High performance Unix-based HTTP server" \
@@ -37,8 +38,10 @@ RUN set -xe -o pipefail; \
         } | tee /usr/local/etc/apache24/Includes/appjail-php.conf; \
     fi; \
     \
-    pkg clean -a; \
-    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*; \
+    if [ -z "${NO_PKGCLEAN}" ]; then \
+        pkg clean -a; \
+        rm -rf /var/cache/pkg/* /var/db/pkg/repos/*; \
+    fi; \
     \
     ln -sf /dev/stderr /var/log/httpd-error.log; \
     ln -sf /dev/stdout /var/log/httpd-access.log; \
