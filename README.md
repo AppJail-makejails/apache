@@ -105,6 +105,10 @@ $ appjail oci run -Pd \
 * `apache_from` (default: `ghcr.io/appjail-makejails/apache`): Location of OCI image. See also [OCI Configuration](#oci-configuration).
 * `apache_tag` (default: `latest`): OCI image tag. See also [OCI Configuration](#oci-configuration).
 
+### Environment (OCI image)
+
+* `PGID` (default: `1000`): Equivalent to `PUID` but for the Process Group ID.
+* `PUID` (default: `1000`): Process User ID for the container's main process, allowing you to match the owner of files written to mounted host volumes to your host system's user. Writable volumes are changed based on this environment variable.
 
 ## OCI Configuration
 
@@ -119,7 +123,7 @@ build:
         FREEBSD_RELEASE: "15.1"
         APACHEVER: "24"
         NO_PKGCLEAN: "1"
-      cache_dirs: ["pkgcache:/var/cache/pkg"]
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
     - tag: 15.1-24-php82
       containerfile: Containerfile
       args:
@@ -127,7 +131,7 @@ build:
         APACHEVER: "24"
         PHPVER: "82"
         NO_PKGCLEAN: "1"
-      cache_dirs: ["pkgcache:/var/cache/pkg"]
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
     - tag: 15.1-24-php83
       containerfile: Containerfile
       args:
@@ -135,7 +139,7 @@ build:
         APACHEVER: "24"
         PHPVER: "83"
         NO_PKGCLEAN: "1"
-      cache_dirs: ["pkgcache:/var/cache/pkg"]
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
     - tag: 15.1-24-php84
       containerfile: Containerfile
       args:
@@ -143,7 +147,7 @@ build:
         APACHEVER: "24"
         PHPVER: "84"
         NO_PKGCLEAN: "1"
-      cache_dirs: ["pkgcache:/var/cache/pkg"]
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
     - tag: 15.1-24-php85
       containerfile: Containerfile
       args:
@@ -151,7 +155,7 @@ build:
         APACHEVER: "24"
         PHPVER: "85"
         NO_PKGCLEAN: "1"
-      cache_dirs: ["pkgcache:/var/cache/pkg"]
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
 ```
 
 ## Notes

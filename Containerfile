@@ -16,7 +16,7 @@ LABEL org.opencontainers.image.title="httpd" \
 RUN set -xe -o pipefail; \
     \
     pkg update; \
-    pkg install apache${APACHEVER}; \
+    pkg install -U apache${APACHEVER}; \
     \
     mkdir -p /usr/local/www/html; \
     chmod 555 /usr/local/www/html; \
