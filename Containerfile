@@ -22,7 +22,8 @@ RUN set -xe -o pipefail; \
     chmod 555 /usr/local/www/html; \
     \
     if [ -n "${PHPVER}" ]; then \
-        pkg install -U mod_php${PHPVER}; \
+        pkg install -U php${PHPVER} mod_php${PHPVER}; \
+        cp -v /usr/local/etc/php.ini-production /usr/local/etc/php.ini; \
         { \
             echo -e '<FilesMatch \.php$>'; \
             echo -e '\tSetHandler application/x-httpd-php'; \
