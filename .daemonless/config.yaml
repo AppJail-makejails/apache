@@ -41,3 +41,11 @@ build:
         PHPVER: "85"
         NO_PKGCLEAN: "1"
       cache_dirs: ["pkgcache0:/var/cache/pkg"]
+    - tag: 15.1-24-php86
+      containerfile: Containerfile
+      args:
+        FREEBSD_RELEASE: "15.1"
+        APACHEVER: "24"
+        PHPVER: "86"
+        NO_PKGCLEAN: "1"
+      cache_dirs: ["pkgcache0:/var/cache/pkg"]
