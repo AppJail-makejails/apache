@@ -47,9 +47,9 @@ RUN set -xe -o pipefail; \
     ln -sf /dev/stdout /var/log/httpd-access.log; \
     ln -sf /dev/stdout /var/log/httpd-ssl_request.log;
 
-COPY entrypoint.sh /entrypoint.sh
+COPY httpd-foreground /usr/local/bin/httpd-foreground
 
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /usr/local/bin/httpd-foreground
 
 STOPSIGNAL SIGWINCH
 
@@ -57,4 +57,4 @@ WORKDIR /usr/local
 
 EXPOSE 80
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["httpd-foreground"]
