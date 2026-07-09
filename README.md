@@ -96,7 +96,7 @@ $ appjail oci run -Pd \
     -o overwrite=force \
     -o virtualnet=":<random> default" \
     -o nat \
-    -o fstab="$PWD/index.php /usr/local/www/apache24/data/index.php nullfs ro" \
+    -o fstab="$PWD/index.php usr/local/www/apache24/data/index.php nullfs ro" \
     ghcr.io/appjail-makejails/apache:15.1-24-php85 my-php-app
 ```
 
