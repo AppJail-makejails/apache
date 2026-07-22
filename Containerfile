@@ -41,8 +41,9 @@ RUN set -xe -o pipefail; \
     \
     if [ -z "${NO_PKGCLEAN}" ]; then \
         pkg clean -a; \
-        rm -rf /var/cache/pkg/* /var/db/pkg/repos/*; \
+        rm -rf /var/cache/pkg/*; \
     fi; \
+    rm -rf /var/db/pkg/repos/*; \
     \
     ln -sf /dev/stderr /var/log/httpd-error.log; \
     ln -sf /dev/stdout /var/log/httpd-access.log; \
