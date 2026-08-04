@@ -1,5 +1,6 @@
 ARG apache_from=ghcr.io/appjail-makejails/apache
 ARG apache_tag=latest
 
+OPTION container=boot
 OPTION overwrite=force
 OPTION from=${apache_from}:${apache_tag}
